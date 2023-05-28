@@ -9,3 +9,8 @@ def find_missing_number(n):
     
 listOfNumbers = [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 13, 14, 16]
 print(find_missing_number(listOfNumbers))
+
+# n = (1,1,1.3,3,6,7,8,9,10)
+# sort = set(n)
+# print(sort)
+#set function creates a set by removing all duplicatable elements from the iterable
