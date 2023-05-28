@@ -9,10 +9,13 @@ while n != guess:
     elif guess > n:
         print("too high")
         guess = int(input("entre number :"))
+
         
+
+    else:
         break
 
-else:
+print('you guessed the right number')
 
-print("you guessed it right")
+
 
