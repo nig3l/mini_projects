@@ -40,6 +40,12 @@
 from collections import counter
 
 numbers = [12, 16, 20, 20, 12, 30, 25, 23, 24, 20]
+frequency = counter(numbers)
+
+mode = frequency.most_common(1)[0][0]
+
+print (mode)
+
 
 
 

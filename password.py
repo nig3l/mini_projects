@@ -12,3 +12,28 @@ for i in database.keys():
             
 
         print("verified")
+
+        
+#-- version
+
+'''import getpass
+
+users = {"chief.schwab": "46573", "hillaery.monet": "097543"}
+
+username = input("Enter your username: ")
+password = getpass.getpass("Enter your password: ")
+
+
+# if username not in users:
+#     print("ooops something went wrong")
+
+try:
+    if username in users and users[username] == password:
+        print("Verified")
+    else :
+        print("try again")
+
+except KeyError:
+    print("Invalid username or password")
+
+'''
