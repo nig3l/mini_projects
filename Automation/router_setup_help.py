@@ -26,6 +26,7 @@ defaultGateway = str(input(
   "Do you want the router to have default ip as .254 in the subnets or you prefer custom ones? Type either "
   "'default' or 'custom'."))
 
-while defaultGateway != "Default" or defaultGateway != "custom":
-  defaultGateway = input("Wrong answer! Type either 'default' or 'custom'!")
+while defaultGateway != "Default" and defaultGateway != "custom":
+    defaultGateway = input("Wrong answer! Type either 'Default' or 'custom'!")
+
 print(defaultGateway)
