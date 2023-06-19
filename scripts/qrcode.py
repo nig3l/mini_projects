@@ -6,4 +6,4 @@ s = "https://github.com/nig3l"
 
 # generate 
 url = pyqrcode.create(s)
-url.svg("mygithubprofile.svg", scale = 7)
+url.svg("mygithubprofile.svg", scale = 2)
