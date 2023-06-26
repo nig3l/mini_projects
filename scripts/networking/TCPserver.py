@@ -1,5 +1,10 @@
 import socket
 
+'''
+
+
+# serverside
+
 # Creating TCP/IP socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -28,4 +33,21 @@ while True:
 
     # Close the client socket
     client_socket.close()
+
+'''
+
+# clientside(TCP client)
+
+# Create a TCP/IP socket
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Connect the socket to the server's address and port
+server_address = ('localhost', 12345)
+client_socket.connect(server_address)
+
+# Send data to the server
+message = 'Hello, server!'
+client_socket.sendall(message.encode())
+
+
 
