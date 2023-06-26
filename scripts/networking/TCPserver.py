@@ -50,4 +50,11 @@ message = 'Hello, server!'
 client_socket.sendall(message.encode())
 
 
+# Receive and print the response from the server
+response = client_socket.recv(1024)
+print('Received response:', response.decode())
+
+# Close the socket
+client_socket.close()
+
 
