@@ -1,2 +1,2 @@
- stuff i found interesting
+cool things python can do
  
