@@ -30,12 +30,22 @@ def menu():
             beans = database.get_all_beans(connection)
 
             for bean in beans:
-                print(bean)
+                print(f"{bean[1]} ({bean[2]}) - {bean[3]}/10")
 
         elif user_input == "3":
-            pass
+            name = input("Entre bean name to find: ")
+            beans = database.get_all_beans_by_name(connection,name)
+
+            for bean in beans:
+                print(f"{bean[1]} ({bean[2]}) - {bean[3]}/10")
+
         elif user_input == "4":
-            pass
+            name = input("entre bean name to find : ")
+            best_method = database.get_best_preparation_for_bean(connection,name)
+
+            print(f"The best preparation for {name} is : {best_method[2]}")
+
+
         elif user_input =="5":
             pass
         else:
