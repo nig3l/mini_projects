@@ -42,7 +42,44 @@ print(T[3])
 print(T[1][2])
 
 '''
-# to print the entire two dimensional array
+# to print the entire two dimensional array,wihtout the brackets like the second method
+'''
+for r in T:
+   for c in r:
+      print(c,end = " ")
+   print()
+
+'''
+
+# still works
+
+# for x in T:
+#     print(x,end = " ")
+
+
+# inserting values
+
+T.insert(2, [0,5,11,13,6])
+
+for r in T:
+   for c in r:
+      print(c,end = " ")
+   print()
+
+
+
+# updating values
+
+T[2] = [11,9]
+T[0][3] = 7
+for r in T:
+   for c in r:
+      print(c,end = " ")
+   print()
+
+# Deleting values
+
+del T[3]
 
 for r in T:
    for c in r:
