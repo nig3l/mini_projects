@@ -9,6 +9,7 @@ def convert_currency(amount, from_currency, to_currency):
     data = response.json()
 
     if response.status_code == 200:
+        
         exchange_rates = data["rates"]
         exchange_rate = exchange_rates[to_currency]
 
@@ -28,4 +29,3 @@ to_currency = "EUR"  # Currency to convert to
 converted_amount = convert_currency(amount, from_currency, to_currency)
 if converted_amount is not None:
     print(f"{amount} {from_currency} is equal to {converted_amount} {to_currency}.")
-
