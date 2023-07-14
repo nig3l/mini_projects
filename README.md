@@ -1,2 +1,2 @@
-cool things python can do,from networking to sqlite3 database 
+projects not big enough to have their own repo 
  
